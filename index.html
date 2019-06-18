@@ -26,6 +26,7 @@
 	<script type="text/javascript" src="build/Fallback.js"></script>
 
 
+
 	<!-- favicons -->
 	<link rel="shortcut icon" sizes="16x16" href="./images/favicon/favicon-16.png">
 	<link rel="shortcut icon" sizes="32x32" href="./images/favicon/favicon-32.png">
@@ -47,11 +48,11 @@
 
 
 		<a-entity
-			camera="userHeight: 1.6; near:0.01;"
 			listener
 			look-controls
 			wasd-controls="enabled:true;"
-			position="0 0 0">
+			vieweractions="isCameraRig: true; enabled: true"
+			position="0 0 0"><a-camera></a-camera>
 			</a-entity>
 
 		<a-entity menu position="0 2 -2" scale="0.75 0.75 1" id="menu">
